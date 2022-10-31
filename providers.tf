@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-  required_version = "~> 0.15"
+  # required_version = "~> 0.15"
 }
 
 provider "github" {
@@ -16,6 +16,6 @@ provider "github" {
 provider "aws" {
   access_key = var.aws_access_key_id
   secret_key = var.aws_secret_access_key
-  region     = "ap-southeast-1"
+  region     = "us-east-1"
 }
 
